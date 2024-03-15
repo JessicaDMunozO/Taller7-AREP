@@ -1,0 +1,46 @@
+body {
+    background-color: rgb(221, 197, 245);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 150%;
+    color: rgb(62, 2, 119);
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 150%;
+    color: rgb(62, 2, 119);
+    display: block;
+    margin-bottom: 10px;
+}
+
+input {
+    font-size: 90%;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.submit_button {
+    background-color: rgb(174, 60, 189);
+    color: rgb(3, 0, 5);
+    border: none;
+    padding: 10px 30px;
+    margin-top: 10px;
+    margin-left: 40px;
+    border-radius: 5px;
+}
+
+.submit_button:hover {
+    background-color: rgb(196, 146, 202);
+}
+
+.msg{
+    margin-bottom: 100px;
+}
