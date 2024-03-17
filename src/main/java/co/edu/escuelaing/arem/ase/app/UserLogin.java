@@ -6,7 +6,7 @@ import java.security.NoSuchAlgorithmException;
 import java.util.HashMap;
 
 public class UserLogin {
-    private static HashMap<String, String> userDB = new HashMap<>();
+    public static HashMap<String, String> userDB = new HashMap<>();
 
     public static void main(String[] args) throws NoSuchAlgorithmException {
         userDB.put("JDMO", Cypher.cypherPassword("123456789"));
@@ -20,17 +20,31 @@ public class UserLogin {
             String username = req.queryParams("username");
             String password = req.queryParams("password");
 
-            if (!userDB.containsKey(username)) {
-                return "Invalid username";
-            } else {
-                if (userDB.get(username).equals(Cypher.cypherPassword(password))) {
-                    return "Login successful";
-                } else {
-                    return "Invalid password";
-                }
-            }
+            String response = loginResponse(username, password);
+            return response;
         });
 
+    }
+
+    /**
+     * Gives the response of a login with a username and password
+     * 
+     * @param username the username of the user that wants to login
+     * @param password the password of the user that wants to login
+     * @return a message with the response of the authentication
+     * @throws NoSuchAlgorithmException if there is an error with the cryptographic
+     *                                  algorithm
+     */
+    public static String loginResponse(String username, String password) throws NoSuchAlgorithmException {
+        if (!userDB.containsKey(username)) {
+            return "Invalid username";
+        } else {
+            if (userDB.get(username).equals(Cypher.cypherPassword(password))) {
+                return "Login successful";
+            } else {
+                return "Invalid password";
+            }
+        }
     }
 
     private static int getPort() {
