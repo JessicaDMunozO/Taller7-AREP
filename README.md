@@ -1,7 +1,6 @@
 # Taller 7 - AREP
 Para este taller se busca construir una aplicación web segura por medio del uso de certificados, con un servicio de login básico. Esto se consiguió por medio del comando de `keytool` 
-para generar las llaves y el certificado. La aplicación permite un acceso seguro desde el browser y se probó el acceso a los servicios con dos instancias de *EC2* de *AWS* que estuvieran 
-en comunicación. Se busca garantizar la autenticación, autorización e integridad.
+para generar las llaves y el certificado. La aplicación permite un acceso seguro desde el browser y se probó el acceso a los servicios en *AWS*. Se busca garantizar la autenticación, autorización e integridad.
 
 ## Empezando
 Las siguientes instrucciones permiten que obtenga una copia del proyecto en funcionamiento.
