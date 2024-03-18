@@ -58,7 +58,7 @@ Y si se ingresa un usuario y contraseña correctos, se muestra el mensaje "Login
 ![image](https://github.com/JessicaDMunozO/Taller7-AREP/assets/123814482/c2ff5274-0a18-4444-8da5-232d96548e32)
 
 ## Despliegue en AWS
-
+https://youtu.be/9q8OGuJwrY0
 
 ## Construido con
 Maven - Gestión de dependencias
